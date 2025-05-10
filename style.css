@@ -1,0 +1,373 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Apply box-sizing border-box globally to all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  background-color: #778B8C;
+}
+/* Navbar */
+/* ///// */
+.triangle-container {
+  position: relative; /* To position both triangles on top of each other */
+  width: 100vw;
+  height: 100px; /* Height of the triangles */
+  position: fixed;
+  top: 0;
+  z-index: 40; /* Corrected stacking for navbar container */
+}
+.laal {
+  overflow: visible;
+}
+/* Blue triangle */
+.triangle-blue {
+  position: fixed;
+  width: 0;
+  height: 0;
+  border-top: 100px solid rgb(255, 255, 255); /* Blue triangle */
+  border-right: 100vw solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 20; /* Stacks below the icon */
+}
+.logo {
+  position: fixed; /* Sticks the logo to the top-left corner of the viewport */
+  top: 10px; /* Add padding from the top */
+  left: 10px; /* Add padding from the left */
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+/* Logo image styling */
+.logo img {
+  width: 10vw; /* Logo width as 10% of the viewport width */
+  max-width: 80px; /* Prevent the logo from becoming too large */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Removes any inline spacing issues */
+}
+/* Red triangle (mirror image) */
+
+/* Menu Functionality */
+/* ///// */
+/* Icon styling (positioned above the blue triangle) */
+.icon {
+  position: fixed;
+  top: 33px; /* Position the icon above the blue triangle */
+  right: 20px; /* Place the icon on the right side of the triangle */
+  font-size: 24px; /* Icon size */
+  color: #fbf4f4; /* Icon color */
+  cursor: pointer;
+  z-index: 41; /* Ensures it's always clickable */
+}
+
+/* Sole: Parent of slantedmenu and hasher */
+.sole {
+  position: fixed;
+  top: 0;
+  transform: translateY(-190%);
+  transition: transform 0.5s ease;
+  z-index: 10; /* Ensure sole is behind triangle-red */
+}
+
+/* Red triangle */
+.triangle-red {
+  position: fixed;
+  width: 0;
+  height: 0;
+  border-top: 100px solid #778B8C; /* Red triangle */
+  border-left: 100vw solid transparent;
+  z-index: 20; /* Place this above sole and slantedmenu */
+}
+
+/* Slanted menu */
+.slantedmenu {
+  position: relative;
+  top: 0;
+  background-color: #778B8C;
+  width: 100vw;
+  height: 40vh;
+  padding: 30px;
+  z-index: 12; /* Place below the red triangle */
+}
+
+/* Hasher */
+.hasher {
+  position: absolute;
+  padding-top: 4vh;
+  top: 40px;
+  font-size: 3vh;
+  display: flex;
+  flex-direction: column;
+  right: 50px;
+  z-index: 21; /* Ensure hasher is above triangle-red if needed */
+}
+
+.slantedmenu::after {
+  position: absolute;
+  width: 100vw;
+  height: 60vh;
+  transform-origin: top left;
+  transform: skewY(4deg);
+  background-color: #778B8C;
+  top: 0;
+  left: 0;
+  content: "";
+  z-index: 12; /* Matches the slantedmenu's z-index */
+}
+
+.sole.active {
+  transform: translateY(20px); /* Slide the menu down when active */
+}
+
+.sole a {
+  padding: 1.5vh;
+  text-decoration: none;
+  text-align: right;
+}
+
+/* .hasher {
+  position: absolute;
+  padding-top: 2vh;
+  top: 4.5vh;
+  font-size: 3vh;
+  display: flex;
+  flex-direction: column;
+  right: 70px;
+  z-index: 9; 
+  color: white;
+} */
+.hasher a {
+  color: white;
+}
+
+.laal img {
+  width: 100%;
+}
+
+/* Lower Region */
+.lower-region {
+  position: relative; /* Creates stacking context */
+  z-index: 2; /* Below the navbar and triangles */
+}
+
+.lowertriangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: -140px;
+  border-bottom: 140px solid#90a691; /* Blue triangle */
+  border-right: 100vw solid transparent;
+  z-index: 1; /* Ensures it's below lower-region content */
+}
+
+.lowerright {
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: -140px;
+  border-bottom: 140px solid rgb(250, 247, 246); /* Dark blue triangle */
+  border-left: 100vw solid transparent;
+  z-index: 1; /* Matches lowertriangle stacking */
+}
+
+.lowerfollowup {
+  background-color: rgb(248, 245, 243);
+  z-index: 0; /* Positioned behind all main content */
+  padding: 20px;
+  padding-top: 5vh;
+}
+
+/* Content Section Below the Navbar */
+.illa {
+  position: relative; /* Correct stacking context for background */
+  width: 100vw;
+
+  background-color: #778B8C;
+  z-index: 0; /* Pushed behind all other elements */
+}
+.newsletter-section {
+  position: relative;
+  width: 100%;
+  height: 60vh; /* Adjust the height of the section */
+  background: url("assets/news.jpg") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #778B8C;
+  /* Slanted bottom using clip-path */
+  clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 80%);
+  z-index: 0; /* Matches general content stacking */
+}
+
+/* Content inside the newsletter section */
+.newsletter-section .content {
+  position: relative;
+  color: #000;
+  /* Light semi-transparent background for text readability */
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Input field for email */
+.newsletter-section input {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 80%;
+  max-width: 250px;
+  margin-bottom: 10px;
+}
+
+/* Submit button */
+.newsletter-section button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #778B8C;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Button hover effect */
+.newsletter-section button:hover {
+  background-color: #778B8C;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+  .newsletter-section {
+    height: 50vh;
+  }
+  .sole.active {
+    transform: translateY(15%);
+  }
+
+  .newsletter-section .content {
+    padding: 15px;
+    max-width: 400px;
+  }
+
+  .newsletter-section input {
+    width: 70%;
+    max-width: 200px;
+  }
+  .laal img {
+    width: 180%;
+    height: 180%;
+  }
+  .hasher {
+    padding-top: 0;
+  }
+}
+
+/* footer */
+
+/* Footer Container */
+footer {
+  background-color: #778B8C; /* A dark purple-gray color */
+  color: white;
+  padding: 20px 0;
+  font-size: 18px;
+  text-align: center; /* Center the text */
+}
+
+.footer-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+}
+
+.footer-info {
+  margin-bottom: 20px;
+}
+
+.footer-info h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer-info p {
+  margin-bottom: 5px;
+}
+
+.footer-info a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.footer-info a:hover {
+  color: #ffcc00; /* Highlight color on hover */
+}
+
+/* Social Media Icons */
+.footer-social {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  justify-content: center; /* Center the social media icons */
+}
+
+.social-icon {
+  color: #778B8C;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #ffcc00; /* Highlight color on hover */
+}
+
+/* Footer Bottom Text */
+.footer-bottom {
+  font-size: 16px;
+}
+
+.footer-bottom p {
+  margin-bottom: 10px;
+}
+
+.footer-bottom a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+  color: #ffcc00; /* Highlight color on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .lowertriangle {
+    top: -16vw;
+  }
+  .lowerright {
+    top: -16vw;
+  }
+}

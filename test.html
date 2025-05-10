@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interior Designs</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Arial", sans-serif;
+      }
+
+      body {
+        background: #f9f9f9;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #333;
+        font-size: 2.5rem;
+      }
+
+      .card-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .card {
+        display: flex;
+        flex-direction: row;
+        background: white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .card img {
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+      }
+
+      .card-content {
+        padding: 20px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .card-title {
+        font-size: 1.8rem;
+        color: #43162c;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+
+      .card-description {
+        color: #555;
+        font-size: 1rem;
+        line-height: 1.8;
+      }
+
+      .card-id {
+        font-size: 0.85rem;
+        font-weight: bold;
+        color: #999;
+        margin-bottom: 10px;
+      }
+
+      @media (max-width: 768px) {
+        .card {
+          flex-direction: column;
+        }
+
+        .card img {
+          width: 100%;
+        }
+
+        .card-content {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Interior Design Styles</h1>
+
+    <div class="card-container">
+      <div class="card" id="card-1">
+        <img
+          src="https://via.placeholder.com/600x400?text=Modern+Farmhouse"
+          alt="Modern Farmhouse"
+        />
+        <div class="card-content">
+          <div class="card-id">#1</div>
+          <div class="card-title">Modern Farmhouse</div>
+          <div class="card-description">
+            The Modern Farmhouse style combines rustic charm with contemporary
+            elegance. Reclaimed wood, barn doors, and open shelving are
+            complemented by sleek lines and neutral palettes. This aesthetic
+            creates a cozy, warm atmosphere while maintaining a clean, modern
+            feel. It's perfect for those who want a blend of tradition and
+            innovation.
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="card-2">
+        <img
+          src="https://via.placeholder.com/600x400?text=House+Of+Patterns"
+          alt="House Of Patterns"
+        />
+        <div class="card-content">
+          <div class="card-id">#2</div>
+          <div class="card-title">House Of Patterns</div>
+          <div class="card-description">
+            Dive into a world of vibrant designs with the House of Patterns
+            style. Intricate motifs, geometric shapes, and bold colors dominate
+            this look. Textiles like kilim rugs, patterned cushions, and
+            detailed wallpapers create an energetic and expressive space. It’s
+            the perfect style for anyone who loves to make a statement.
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="card-3">
+        <img
+          src="https://via.placeholder.com/600x400?text=The+Minimalist"
+          alt="The Minimalist"
+        />
+        <div class="card-content">
+          <div class="card-id">#3</div>
+          <div class="card-title">The Minimalist</div>
+          <div class="card-description">
+            Embrace simplicity with The Minimalist style, where every element
+            has a purpose. Featuring clean lines, neutral tones, and open
+            spaces, this style promotes tranquility and order. Functional
+            furniture and limited decor keep the focus on essentials, creating a
+            serene and clutter-free environment.
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="card-4">
+        <img
+          src="https://via.placeholder.com/600x400?text=The+Gatsby+Gala"
+          alt="The Gatsby Gala"
+        />
+        <div class="card-content">
+          <div class="card-id">#4</div>
+          <div class="card-title">The Gatsby Gala</div>
+          <div class="card-description">
+            Experience the grandeur of the roaring twenties with The Gatsby
+            Gala. Think metallic finishes, bold geometric patterns, and
+            luxurious materials like velvet and marble. This Art Deco-inspired
+            style is perfect for those who love sophistication and drama,
+            creating a space that’s both opulent and timeless.
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="card-5">
+        <img
+          src="https://via.placeholder.com/600x400?text=Staycation"
+          alt="Staycation"
+        />
+        <div class="card-content">
+          <div class="card-id">#5</div>
+          <div class="card-title">Staycation</div>
+          <div class="card-description">
+            Turn your home into a luxurious retreat with the Staycation style.
+            Soft furnishings, earthy tones, and plenty of greenery create a
+            relaxed, inviting vibe. This look prioritizes comfort and leisure,
+            with spa-inspired bathrooms, cozy reading nooks, and warm lighting
+            that make every day feel like a holiday.
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="card-6">
+        <img
+          src="https://via.placeholder.com/600x400?text=Under+The+Arch"
+          alt="Under The Arch"
+        />
+        <div class="card-content">
+          <div class="card-id">#6</div>
+          <div class="card-title">Under The Arch</div>
+          <div class="card-description">
+            The Under The Arch style embraces architectural curves and rounded
+            shapes for a soft, elegant look. Arched doorways, curved furniture,
+            and circular decor elements create a harmonious flow throughout the
+            space. Paired with neutral tones and textured walls, it exudes
+            timeless sophistication.
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="card-7">
+        <img
+          src="https://via.placeholder.com/600x400?text=Pastel+Dream"
+          alt="Pastel Dream"
+        />
+        <div class="card-content">
+          <div class="card-id">#7</div>
+          <div class="card-title">Pastel Dream</div>
+          <div class="card-description">
+            Soft, dreamy, and playful, the Pastel Dream style uses delicate
+            colors like blush pink, mint green, and lavender. Combined with airy
+            fabrics, subtle patterns, and whimsical decor, this design creates a
+            serene and uplifting environment that’s both stylish and cozy.
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="card-8">
+        <img
+          src="https://via.placeholder.com/600x400?text=In+The+Grey"
+          alt="In The Grey"
+        />
+        <div class="card-content">
+          <div class="card-id">#8</div>
+          <div class="card-title">In The Grey</div>
+          <div class="card-description">
+            Sophisticated and versatile, the In The Grey style revolves around
+            shades of grey. This neutral palette is balanced with contrasting
+            textures and materials like concrete, metal, and soft fabrics. The
+            result is a modern, elegant space with a calming and understated
+            charm.
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="card-9">
+        <img
+          src="https://via.placeholder.com/600x400?text=Sculpted+Harmony"
+          alt="Sculpted Harmony"
+        />
+        <div class="card-content">
+          <div class="card-id">#9</div>
+          <div class="card-title">Sculpted Harmony</div>
+          <div class="card-description">
+            Sculpted Harmony is a blend of art and functionality. Featuring
+            statement furniture pieces, sculptural lighting, and unique decor,
+            this style transforms a home into an artistic haven. Neutral tones
+            and natural materials enhance the sophisticated aesthetic, creating
+            a space that’s as beautiful as it is practical.
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="card-10">
+        <img
+          src="https://via.placeholder.com/600x400?text=Indian+Modernist"
+          alt="Indian Modernist"
+        />
+        <div class="card-content">
+          <div class="card-id">#10</div>
+          <div class="card-title">Indian Modernist</div>
+          <div class="card-description">
+            Combining traditional Indian elements with modern design, the Indian
+            Modernist style showcases vibrant colors, intricate patterns, and
+            handcrafted decor. Paired with clean lines and contemporary
+            furniture, it celebrates India’s rich heritage while embracing a
+            global outlook.
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="card-11">
+        <img
+          src="https://via.placeholder.com/600x400?text=Urban+Oasis"
+          alt="Urban Oasis"
+        />
+        <div class="card-content">
+          <div class="card-id">#11</div>
+          <div class="card-title">Urban Oasis</div>
+          <div class="card-description">
+            Urban Oasis creates a green retreat within the city. Incorporating
+            indoor plants, natural materials, and calming colors, this style
+            brings nature indoors. Paired with modern furniture and functional
+            layouts, it’s a perfect escape from urban hustle while maintaining
+            contemporary aesthetics.
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="card-12">
+        <img
+          src="https://via.placeholder.com/600x400?text=Classic+Contemporary"
+          alt="Classic Contemporary"
+        />
+        <div class="card-content">
+          <div class="card-id">#12</div>
+          <div class="card-title">Classic Contemporary</div>
+          <div class="card-description">
+            Blending timeless elegance with modern sophistication, Classic
+            Contemporary uses neutral palettes, luxurious materials, and
+            understated decor. Featuring elegant furniture and harmonious
+            layouts, this style offers a perfect balance between tradition and
+            innovation.
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

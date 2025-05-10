@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>SJ Interiors | Services</title>
+  </head>
+  <body>
+    <div class="sole">
+      <div class="hasher">
+        <a href="index.html">Home</a>
+        <a href="Services.html"><b>Services</b></a>
+        <a href="Portfolio.html"><b>Porfolio</b></a>
+        <a href="FaQ.html">FaQ</a>
+        <a href="AboutUs.html">AboutUs</a>
+        <a href="Blogs.html">Blogs</a>
+
+        <a href="./contact.html">Contact Us</a>
+      </div>
+      <div class="slantedmenu"></div>
+    </div>
+
+    <div class="triangle-container">
+      <div class="triangle-red"></div>
+      <div class="triangle-blue">
+        <div class="logo">
+          <a href="index.html">
+            <img src="logo.png" alt="SJ Interiors Logo"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <span class="icon"><i class="fa-solid fa-bars"></i></span>
+    <div class="illa">
+      <div
+        class="laal"
+        style="height: 50vw; background-color: rgb(222, 221, 208)"
+      >
+        <div class="video-background">
+          <video autoplay muted loop playsinline>
+            <source
+              src="https://yashshogun.github.io/sjupdated/assets/Untitled%20design%20(5).mp4"
+              type="video/mp4"
+            />
+            Your browser does not support the video tag.
+          </video>
+          <div class="video-overlay">
+            <h1>SJ Interiors</h1>
+            <h2>Designs and Decors</h2>
+            <p>
+              SJ Interiors DnD is a premier interior design firm catering to
+              home and institutional clients, driven by a profound commitment to
+              sustainability and excellence.
+            </p>
+          </div>
+        </div>
+        <style>
+          /* Video Background */
+          .video-background {
+            position: relative;
+            width: 100vw;
+            height: 60vw; /* Full height of the viewport */
+            overflow: hidden;
+          }
+
+          .video-background video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            object-fit: cover;
+            z-index: 1; /* Ensures the video stays behind other content */
+          }
+
+          /* Overlay and Text */
+          .video-overlay {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            height: 100%;
+            color: white;
+            background: rgba(
+              0,
+              0,
+              0,
+              0.4
+            ); /* Semi-transparent overlay for contrast */
+
+            top: -4vh;
+          }
+
+          .video-overlay h1 {
+            color: white;
+            font-size: 5vw;
+            margin-bottom: 1vw;
+          }
+
+          .video-overlay h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1.5vw;
+          }
+
+          .video-overlay p {
+            font-size: 1rem;
+            line-height: 1.5;
+            max-width: 800px;
+          }
+
+          /* Responsive adjustments */
+          @media (max-width: 768px) {
+            .video-overlay h1 {
+              font-size: 3vw;
+            }
+
+            .video-overlay h2 {
+              font-size: 1.2rem;
+            }
+
+            .video-overlay p {
+              font-size: 2vw;
+            }
+          }
+        </style>
+      </div>
+    </div>
+    <div class="lower-region">
+      <div class="lowertriangle"></div>
+      <div class="lowerright"></div>
+      <div class="lowerfollowup">
+        <style>
+          /* Reset styles */
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+
+          body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+          }
+
+          .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin: 40px 0;
+            text-transform: uppercase;
+            font-weight: bold;
+          }
+
+          .services-container {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            overflow: hidden;
+          }
+
+          .services-wrapper {
+            display: flex;
+            gap: 30px;
+            width: calc(250px * 9 * 2); /* Adjust for duplication */
+          }
+          .services-wrapper {
+            animation: scroll 40s linear infinite; /* Slower scrolling with 40 seconds duration */
+          }
+
+          @keyframes scroll {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(
+                calc(-250px * 9)
+              ); /* Scroll through all cards */
+            }
+          }
+
+          .service-card {
+            position: relative;
+            width: 250px;
+            height: 350px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            background-color: #fff;
+            transition: transform 0.3s ease;
+          }
+
+          .service-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(70%);
+            transition: transform 0.3s ease;
+          }
+
+          .service-card:hover img {
+            transform: scale(1.1);
+          }
+
+          .service-card .name {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+            font-size: 1.2rem;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.5);
+          }
+
+          @media (max-width: 768px) {
+            .service-card {
+              width: 180px;
+              height: 270px;
+            }
+
+            .services-wrapper {
+              gap: 15px;
+            }
+          }
+        </style>
+        <style>
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Arial", sans-serif;
+          }
+
+          h1 {
+            padding-top: 30px;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+            font-size: 2.5rem;
+          }
+
+          .card-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            height: 7000px;
+          }
+
+          .card {
+            display: flex;
+            flex-direction: row;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+          }
+
+          .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+          }
+
+          .card img {
+            width: 50%;
+            height: auto;
+            object-fit: cover;
+          }
+
+          .card-content {
+            padding: 20px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+          }
+
+          .card-title {
+            font-size: 1.8rem;
+            color: #43162c;
+            margin-bottom: 10px;
+            font-weight: bold;
+          }
+
+          .card-description {
+            color: #555;
+            font-size: 1rem;
+            line-height: 1.8;
+          }
+
+          .card-id {
+            font-size: 0.85rem;
+            font-weight: bold;
+            color: #999;
+            margin-bottom: 10px;
+          }
+
+          @media (max-width: 768px) {
+            .card {
+              flex-direction: column;
+            }
+
+            .card img {
+              width: 100%;
+            }
+
+            .card-content {
+              width: 100%;
+            }
+          }
+        </style>
+
+        <h1>Interior Design Styles</h1>
+
+        <div class="card-container">
+          <div class="card" id="card-1">
+            <img
+              src="https://yashshogun.github.io/sjupdated/assets/service%20(1).jpg"
+              alt="Modern Farmhouse"
+            />
+            <div class="card-content">
+              <div class="card-id">#1</div>
+              <div class="card-title">Modern Farmhouse</div>
+              <div class="card-description">
+                The Modern Farmhouse style combines rustic charm with
+                contemporary elegance. Reclaimed wood, barn doors, and open
+                shelving are complemented by sleek lines and neutral palettes.
+                This aesthetic creates a cozy, warm atmosphere while maintaining
+                a clean, modern feel. It's perfect for those who want a blend of
+                tradition and innovation.
+              </div>
+            </div>
+          </div>
+
+          <div class="card" id="card-2">
+            <img
+              src="https://yashshogun.github.io/sjupdated/assets/service%20(2).jpg"
+              alt="House Of Patterns"
+            />
+            <div class="card-content">
+              <div class="card-id">#2</div>
+              <div class="card-title">House Of Patterns</div>
+              <div class="card-description">
+                Dive into a world of vibrant designs with the House of Patterns
+                style. Intricate motifs, geometric shapes, and bold colors
+                dominate this look. Textiles like kilim rugs, patterned
+                cushions, and detailed wallpapers create an energetic and
+                expressive space. It’s the perfect style for anyone who loves to
+                make a statement.
+              </div>
+            </div>
+          </div>
+
+          <div class="card" id="card-3">
+            <img
+              src="https://yashshogun.github.io/sjupdated/assets/service%20(3).jpg"
+              alt="The Minimalist"
+            />
+            <div class="card-content">
+              <div class="card-id">#3</div>
+              <div class="card-title">The Minimalist</div>
+              <div class="card-description">
+                Embrace simplicity with The Minimalist style, where every
+                element has a purpose. Featuring clean lines, neutral tones, and
+                open spaces, this style promotes tranquility and order.
+                Functional furniture and limited decor keep the focus on
+                essentials, creating a serene and clutter-free environment.
+              </div>
+            </div>
+          </div>
+
+          <div class="card" id="card-4">
+            <img
+              src="https://yashshogun.github.io/sjupdated/assets/service%20(4).jpg"
+              alt="The Gatsby Gala"
+            />
+            <div class="card-content">
+              <div class="card-id">#4</div>
+              <div class="card-title">The Gatsby Gala</div>
+              <div class="card-description">
+                Experience the grandeur of the roaring twenties with The Gatsby
+                Gala. Think metallic finishes, bold geometric patterns, and
+                luxurious materials like velvet and marble. This Art
+                Deco-inspired style is perfect for those who love sophistication
+                and drama, creating a space that’s both opulent and timeless.
+              </div>
+            </div>
+          </div>
+
+          <div class="card" id="card-5">
+            <img
+              src="https://yashshogun.github.io/sjupdated/assets/service%20(5).jpg"
+              alt="Staycation"
+            />
+            <div class="card-content">
+              <div class="card-id">#5</div>
+              <div class="card-title">Staycation</div>
+              <div class="card-description">
+                Turn your home into a luxurious retreat with the Staycation
+                style. Soft furnishings, earthy tones, and plenty of greenery
+                create a relaxed, inviting vibe. This look prioritizes comfort
+                and leisure, with spa-inspired bathrooms, cozy reading nooks,
+                and warm lighting that make every day feel like a holiday.
+              </div>
+            </div>
+          </div>
+
+          <div class="card" id="card-6">
+            <img
+              src="https://yashshogun.github.io/sjupdated/assets/service%20(6).jpg"
+              alt="Under The Arch"
+            />
+            <div class="card-content">
+              <div class="card-id">#6</div>
+              <div class="card-title">Under The Arch</div>
+              <div class="card-description">
+                The Under The Arch style embraces architectural curves and
+                rounded shapes for a soft, elegant look. Arched doorways, curved
+                furniture, and circular decor elements create a harmonious flow
+                throughout the space. Paired with neutral tones and textured
+                walls, it exudes timeless sophistication.
+              </div>
+            </div>
+          </div>
+
+          <div class="card" id="card-7">
+            <img
+              src="https://yashshogun.github.io/sjupdated/assets/service%20(7).jpg"
+              alt="Pastel Dream"
+            />
+            <div class="card-content">
+              <div class="card-id">#7</div>
+              <div class="card-title">Pastel Dream</div>
+              <div class="card-description">
+                Soft, dreamy, and playful, the Pastel Dream style uses delicate
+                colors like blush pink, mint green, and lavender. Combined with
+                airy fabrics, subtle patterns, and whimsical decor, this design
+                creates a serene and uplifting environment that’s both stylish
+                and cozy.
+              </div>
+            </div>
+          </div>
+
+          <div class="card" id="card-8">
+            <img
+              src="https://yashshogun.github.io/sjupdated/assets/service%20(8).jpg"
+              alt="In The Grey"
+            />
+            <div class="card-content">
+              <div class="card-id">#8</div>
+              <div class="card-title">In The Grey</div>
+              <div class="card-description">
+                Sophisticated and versatile, the In The Grey style revolves
+                around shades of grey. This neutral palette is balanced with
+                contrasting textures and materials like concrete, metal, and
+                soft fabrics. The result is a modern, elegant space with a
+                calming and understated charm.
+              </div>
+            </div>
+          </div>
+
+          <div class="card" id="card-9">
+            <img
+              src="https://yashshogun.github.io/sjupdated/assets/service%20(9).jpg"
+              alt="Sculpted Harmony"
+            />
+            <div class="card-content">
+              <div class="card-id">#9</div>
+              <div class="card-title">Sculpted Harmony</div>
+              <div class="card-description">
+                Sculpted Harmony is a blend of art and functionality. Featuring
+                statement furniture pieces, sculptural lighting, and unique
+                decor, this style transforms a home into an artistic haven.
+                Neutral tones and natural materials enhance the sophisticated
+                aesthetic, creating a space that’s as beautiful as it is
+                practical.
+              </div>
+            </div>
+          </div>
+
+          <div class="card" id="card-10">
+            <img
+              src="https://yashshogun.github.io/sjupdated/assets/service%20(10).jpg"
+              alt="Indian Modernist"
+            />
+            <div class="card-content">
+              <div class="card-id">#10</div>
+              <div class="card-title">Indian Modernist</div>
+              <div class="card-description">
+                Combining traditional Indian elements with modern design, the
+                Indian Modernist style showcases vibrant colors, intricate
+                patterns, and handcrafted decor. Paired with clean lines and
+                contemporary furniture, it celebrates India’s rich heritage
+                while embracing a global outlook.
+              </div>
+            </div>
+          </div>
+
+          <div class="card" id="card-11">
+            <img
+              src="https://yashshogun.github.io/sjupdated/assets/service%20(11).jpg"
+              alt="Urban Oasis"
+            />
+            <div class="card-content">
+              <div class="card-id">#11</div>
+              <div class="card-title">Urban Oasis</div>
+              <div class="card-description">
+                Urban Oasis creates a green retreat within the city.
+                Incorporating indoor plants, natural materials, and calming
+                colors, this style brings nature indoors. Paired with modern
+                furniture and functional layouts, it’s a perfect escape from
+                urban hustle while maintaining contemporary aesthetics.
+              </div>
+            </div>
+          </div>
+
+          <div class="card" id="card-12">
+            <img
+              src="https://yashshogun.github.io/sjupdated/assets/service%20(12).jpg"
+              alt="Classic Contemporary"
+            />
+            <div class="card-content">
+              <div class="card-id">#12</div>
+              <div class="card-title">Classic Contemporary</div>
+              <div class="card-description">
+                Blending timeless elegance with modern sophistication, Classic
+                Contemporary uses neutral palettes, luxurious materials, and
+                understated decor. Featuring elegant furniture and harmonious
+                layouts, this style offers a perfect balance between tradition
+                and innovation.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="newsletter-section">
+        <div class="content">
+          <h2>SUBSCRIBE TO NEWSLETTER</h2>
+          <p>
+            Stay up to date on all the news from the world of design and
+            furniture without missing out on our special initiatives.
+          </p>
+          <form>
+            <input type="email" placeholder="Email" id="laste" required />
+            <button type="button" onclick="sendlMail()">SEND</button>
+          </form>
+        </div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+      <script>
+        // Initialize EmailJS
+        emailjs.init("LjQlC23r4qvAcui9f");
+
+        function sendlMail() {
+          var params = {
+            email: document.getElementById("laste").value,
+          };
+
+          const serviceID = "service_qyod98i";
+          const templateID = "template_cwe3uqa";
+
+          emailjs
+            .send(serviceID, templateID, params)
+            .then((res) => {
+              document.getElementById("laste").value = "";
+              console.log(res);
+              alert("Your message was sent successfully!");
+            })
+            .catch((err) => {
+              console.log(err);
+              alert("Failed to send your message. Please try again.");
+            });
+        }
+      </script>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-info">
+          <h3>
+            <img
+              src="logofull.png"
+              alt=""
+              style="height: auto; max-width: 300px"
+            />
+          </h3>
+          <p>Email Id: sjinteriorsdnd@gmail.com , info@sjinteriorsdnd.co.in</p>
+          <p>Contact Number:+91 9735749999 ,+91 6303 062 887</p>
+          <p>
+            Address: LIG-140, Door no: 4-51- 19/2.,Ground floor, Lawsons Bay
+            Colony, Visakhapatnam, Andhra Pradesh 530017
+          </p>
+        </div>
+
+        <div class="footer-social">
+          <a
+            href="https://www.instagram.com/sj_interiors_dnd?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw== "
+            class="social-icon instagram"
+            ><img
+              src="https://clipartcraft.com/images/instagram-logo-transparent-background-2.png"
+              alt="Instagram "
+              width="40"
+            />
+          </a>
+          <a href="https://wa.me/+91 6303 062 887" class="social-icon facebook"
+            ><img
+              src="https://logodownload.org/wp-content/uploads/2015/04/whatsapp-logo-1.png"
+              alt="Whatsapp"
+              width="40"
+          /></a>
+          <a href="https://pin.it/6cdlRKfb0" class="social-icon pinterest"
+            ><img
+              src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png"
+              alt="Pinterest"
+              width="40"
+          /></a>
+          <a
+            href="www.linkedin.com/in/
+          sj-interiors-designs-and-decors-2603191b7"
+            class="social-icon pinterest"
+            ><img
+              src="https://logospng.org/download/linkedin/logo-linkedin-icon-1536.png"
+              alt="Linkedin"
+              width="40"
+          /></a>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            2024 &copy; <strong>SJ Interiors</strong> Developed by Digitexis
+          </p>
+          <a href="#">Privacy Policy</a> | <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const toggleButton = document.querySelector(".icon");
+      const menu = document.querySelector(".sole");
+
+      // Add event listener for button click
+      toggleButton.addEventListener("click", () => {
+        menu.classList.toggle("active"); // Toggle the 'active' class to slide menu
+      });
+    </script>
+  </body>
+  <link rel="stylesheet" href="style.css" />
+</html>

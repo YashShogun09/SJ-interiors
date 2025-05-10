@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>SJ Interiors | FaQs</title>
+  </head>
+  <body>
+    <div class="sole">
+        <div class="hasher">
+            <a href="index.html">Home</a>
+            <a href="Services.html"><b>Services</b></a>
+            <a href="Portfolio.html"><b>Porfolio</b></a>
+            <a href="FaQ.html">FaQ</a>
+            <a href="AboutUs.html">AboutUs</a>
+            <a href="Blogs.html">Blogs</a>
+      
+            <a href="./contact.html">Contact Us</a>
+          </div>
+      <div class="slantedmenu"></div>
+    </div>
+
+    <div class="triangle-container">
+      <div class="triangle-red"></div>
+      <div class="triangle-blue"><div class="logo">
+        <a href="index.html">
+          <img src="logo.png" alt="SJ Interiors Logo" style="margin-left: 50px;"
+          /></a>
+      </div></div>
+    </div>
+    <span class="icon"><i class="fa-solid fa-bars"></i></span>
+    <div class="illa">
+      <div
+        class="laal"
+        style="height: 50vw; background-color: rgb(222, 221, 208)"
+      >
+      <div class="video-background">
+        <video autoplay muted loop playsinline>
+          <source
+            src="https://yashshogun.github.io/sjupdated/assets/Untitled%20design%20(5).mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay">
+          <h1>SJ Interiors</h1>
+          <h2>Designs and Decors</h2>
+          <p>
+            SJ Interiors DnD is a premier interior design firm catering to home
+            and institutional clients, driven by a profound commitment to
+            sustainability and excellence.
+          </p>
+        </div>
+      </div>
+      <style>
+        /* Reset styles */
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+  
+        /* Video Background */
+        .video-background {
+          position: relative;
+          width: 100vw;
+          height: 60vw; /* Full height of the viewport */
+          overflow: hidden;
+        }
+  
+        .video-background video {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          max-width: 100%;
+          max-height: 100%;
+          width: auto;
+          height: auto;
+          object-fit: cover;
+          z-index: 1; /* Ensures the video stays behind other content */
+        }
+  
+        /* Overlay and Text */
+        .video-overlay {
+          position: relative;
+          z-index: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          height: 100%;
+          color: white;
+          background: rgba(
+            0,
+            0,
+            0,
+            0.4
+          ); /* Semi-transparent overlay for contrast */
+       
+         
+          top: -4vh;
+        }
+  
+        .video-overlay h1 {
+          color: white;
+          font-size: 5vw;
+          margin-bottom: 1vw;
+        }
+  
+        .video-overlay h2 {
+          font-size: 1.5rem;
+          margin-bottom: 1.5vw;
+        }
+  
+        .video-overlay p {
+          font-size: 1rem;
+          line-height: 1.5;
+          max-width: 800px;
+        }
+  
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+          .video-overlay h1 {
+            font-size: 3vw;
+          }
+  
+          .video-overlay h2 {
+            font-size: 1.2rem;
+          }
+  
+          .video-overlay p {
+            font-size: 2vw;
+          }
+        }
+      </style>
+        </div>
+      </div>
+      <div class="lower-region">
+        <div class="lowertriangle"></div>
+        <div class="lowerright"></div>
+        <div class="lowerfollowup">
+            <style>
+                /* Reset and Global Styles */
+                * {
+                  margin: 0;
+                  padding: 0;
+                  box-sizing: border-box;
+                }
+            
+             
+                h1 {
+                  text-align: center;
+                  margin-bottom: 40px;
+                  color: #222;
+                  font-size: 2.5rem;
+                  margin-top: 20px;
+                }
+            
+                .faq-container {
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  max-width: 900px;
+                  margin: 0 auto;
+                }
+            
+                .faq-item {
+                  width: 100%;
+                  margin: 15px 0;
+                  background-color: #fff;
+                  border-radius: 12px;
+                  box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.1);
+                  overflow: hidden;
+                  position: relative;
+                  transition: transform 0.5s ease, box-shadow 0.5s ease;
+                  cursor: pointer;
+                }
+            
+                .faq-item:hover {
+                  transform: scale(1.05) translateY(-10px);
+                  box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.2);
+                }
+            
+                .faq-item .question {
+                  /* background-color: #ff6347; */
+                  color: #1b1919;
+                  padding: 20px;
+                  font-size: 2rem;
+                  font-weight: bold;
+                  text-transform: uppercase;
+                  position: relative;
+                  z-index: 1;
+                  transition: background-color 0.3s ease, transform 0.3s ease;
+                }
+            
+                .faq-item:hover .question {
+                  /* background-color: #ff4500; */
+                  transform: translateY(-5px);
+                }
+            
+                .faq-item .answer {
+                  display: none;
+                  padding: 20px;
+                  background-color: #f5f5f5;
+                  font-size: 1rem;
+                  color: #555;
+                  font-weight: normal;
+                  transition: opacity 0.3s ease;
+                  position: relative;
+                }
+            
+                .faq-item.open .answer {
+                  display: block;
+                  opacity: 1;
+                  animation: fadeInAnswer 0.5s ease-in-out;
+                }
+            
+                /* 3D Flip Animation */
+                .faq-item.open .question {
+                  transform: rotateY(180deg);
+                  /* background-color: #ff4500; */
+                }
+            
+                /* Animation for the answer */
+                @keyframes fadeInAnswer {
+                  0% {
+                    opacity: 0;
+                  }
+                  100% {
+                    opacity: 1;
+                  }
+                }
+            
+            
+                /* Responsive Design */
+                @media (max-width: 768px) {
+                  .faq-item .question {
+                    font-size: 1.2rem;
+                  }
+                  
+                }
+              </style>
+            </head>
+            <body>
+            
+              <h1>Frequently Asked Questions</h1>
+            
+              <div class="faq-container">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                  <div class="question">What services do you offer?</div>
+                  <div class="answer">
+                    At SJ Interiors, we provide a wide range of interior design services, including space planning, color consultation, furniture selection, lighting design, and project management.
+                  </div>
+                </div>
+            
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                  <div class="question"> How does the design process work?
+                </div>
+                  <div class="answer">
+                    Our design process begins with a consultation to understand your vision, followed by conceptual planning and design proposals. Once approved, we handle the execution to bring your dream space to life.
+                  </div>
+                </div>
+            
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                  <div class="question">Do you handle renovations and remodels?</div>
+                  <div class="answer">
+                    Yes, we specialize in both renovations and remodels, working with trusted contractors to ensure quality and timely completion of your project.
+                  </div>
+                </div>
+            
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                  <div class="question">How much do interior design services cost?</div>
+                  <div class="answer">
+                    Our pricing varies based on the scope of the project. We offer a transparent pricing model and provide a detailed estimate after an initial consultation.
+                  </div>
+                </div>
+            
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                  <div class="question">Can you work with my existing furniture?</div>
+                  <div class="answer">
+                    Absolutely! We can incorporate your existing furniture and decor into the new design, ensuring it complements the new aesthetic
+                  </div>
+                </div>
+            
+                <!-- FAQ Item 6 -->
+                <div class="faq-item">
+                  <div class="question">Do you offer virtual consultations?</div>
+                  <div class="answer">
+                    Yes, we offer virtual consultations for clients who prefer remote planning or live outside of our immediate service area.
+                  </div>
+                </div>
+            
+                <!-- FAQ Item 7 -->
+                <div class="faq-item">
+                  <div class="question">How long does a project typically take?</div>
+                  <div class="answer">
+                    Project timelines vary depending on the complexity and size of the project. We provide an estimated timeline after our initial consultation.
+                  </div>
+                </div>
+              </div>
+            
+              <script>
+                // JavaScript for FAQ toggle functionality
+                document.querySelectorAll('.faq-item').forEach(item => {
+                  item.addEventListener('click', () => {
+                    item.classList.toggle('open');
+                  });
+                });
+              </script>
+        </div>
+        <div class="newsletter-section">
+          <div class="content">
+            <h2>SUBSCRIBE TO NEWSLETTER</h2>
+            <p>
+              Stay up to date on all the news from the world of design and
+              furniture without missing out on our special initiatives.
+            </p>
+            <form>
+              <input type="email" placeholder="Email" id="laste" required />
+              <button type="button" onclick="sendlMail()">SEND</button>
+            </form>
+          </div>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script>
+          // Initialize EmailJS
+          emailjs.init("LjQlC23r4qvAcui9f");
+        
+          function sendlMail() {
+            var params = {
+              email: document.getElementById("laste").value,
+            };
+        
+            const serviceID = "service_qyod98i";
+            const templateID = "template_cwe3uqa";
+        
+            emailjs
+              .send(serviceID, templateID, params)
+              .then((res) => {
+                document.getElementById("laste").value = "";
+                console.log(res);
+                alert("Your message was sent successfully!");
+              })
+              .catch((err) => {
+                console.log(err);
+                alert("Failed to send your message. Please try again.");
+              });
+          }
+        </script>
+      </div>
+    </div>
+
+        <footer>
+      <div class="footer-container">
+        <div class="footer-info">
+          <h3>
+            <img
+              src="logofull.png"
+              alt=""
+              style="height: auto; max-width: 500px"
+            />
+          </h3>
+          <p>Email Id: sjinteriorsdnd@gmail.com , info@sjinteriorsdnd.co.in</p>
+          <p>Contact Number:+91 9735749999 ,+91 6303 062 887</p>
+          <p>
+            Address: LIG-140, Door no: 4-51- 19/2.,Ground floor, Lawsons Bay
+            Colony, Visakhapatnam, Andhra Pradesh 530017
+          </p>
+        </div>
+
+        <div class="footer-social">
+          <a
+            href="https://www.instagram.com/sj_interiors_dnd?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw== "
+            class="social-icon instagram"
+            ><img
+              src="https://clipartcraft.com/images/instagram-logo-transparent-background-2.png"
+              alt="Instagram "
+              width="40"
+            />
+          </a>
+          <a href="https://wa.me/+91 6303 062 887" class="social-icon facebook"
+            ><img
+              src="https://logodownload.org/wp-content/uploads/2015/04/whatsapp-logo-1.png"
+              alt="Whatsapp"
+              width="40"
+          /></a>
+          <a href="https://pin.it/6cdlRKfb0" class="social-icon pinterest"
+            ><img
+              src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png"
+              alt="Pinterest"
+              width="40"
+          /></a>
+          <a
+            href="www.linkedin.com/in/
+          sj-interiors-designs-and-decors-2603191b7"
+            class="social-icon pinterest"
+            ><img
+              src="https://logospng.org/download/linkedin/logo-linkedin-icon-1536.png"
+              alt="Linkedin"
+              width="40"
+          /></a>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            2024 &copy; <strong>SJ Interiors DnD</strong> Developed by Digitexis
+          </p>
+          <a href="#">Privacy Policy</a> | <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const toggleButton = document.querySelector(".icon");
+      const menu = document.querySelector(".sole");
+
+      // Add event listener for button click
+      toggleButton.addEventListener("click", () => {
+        menu.classList.toggle("active"); // Toggle the 'active' class to slide menu
+      });
+    </script>
+  </body>
+  <link rel="stylesheet" href="style.css" />
+</html>
